@@ -32,8 +32,12 @@ __As a site visitor, I want to execute the function `add-number.js`__
 
 ### Repo
 
-- [ ] developed on a branch named `add-number`
-- [ ] fix the script `add-number.js`
+- [x] developed on a branch named `add-number`
+- [x] fix the script `add-number.js`
+
+### HTML
+
+- [x] Fix `<meta>` error
 
 ---
 
