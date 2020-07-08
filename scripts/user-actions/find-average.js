@@ -16,7 +16,19 @@ const reduceToAverage = (arrOfNumbers) => {
   }
 
   // write the logic
-};
+  // Create a variable 'sum', using reducing method calculate the average of the Array
+  // If the Array is empty, return 0
+  let sum = 0;
+  for (let number of arrOfNumbers) {
+    sum += number;
+  }
+  if (arrOfNumbers.length > 0) {
+    return sum / arrOfNumbers.length;
+  } else {
+    return 0;
+  }
+}
+
 
 
 describe('reduceToAverage: computes the average for an array of numbers', () => {
