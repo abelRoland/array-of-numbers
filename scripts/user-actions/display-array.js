@@ -8,16 +8,25 @@ console.log('--- loading: display array');
  * @param {number[]} arrOfNumbers - an array of numbers to reduce
  * @returns {string} a string of numbers on newlines
  */
+
 const reduceForAlert = (arrOfNumbers) => {
+
+  const display = document.getElementById("display");
+
   if (!Array.isArray(arrOfNumbers)) {
     throw new TypeError('parameter must be an array');
   }
   if (!arrOfNumbers.every(entry => typeof entry === 'number')) {
     throw new TypeError('parameter must contain only numbers')
   }
-
-  // write the logic!
-};
+    let value = " ";
+    
+    for(let i = 0; i <  numbers.length; i++){
+     value = value +  numbers[i] + "</br>";
+  }
+  
+   display.innerHTML = value; 
+ };
 
 
 
