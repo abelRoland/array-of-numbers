@@ -22,10 +22,11 @@ const reduceForAlert = (arrOfNumbers) => {
     let value = " ";
     
     for(let i = 0; i <  numbers.length; i++){
-     value = value +  numbers[i] + "</br>";
+     value = value +  numbers[i] + '\n';
   }
-  
-   display.innerHTML = value; 
+    
+   display.innerHTML = value;
+   alert(value);
  };
 
 
