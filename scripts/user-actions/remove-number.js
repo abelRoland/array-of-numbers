@@ -20,7 +20,7 @@ const removeNumber = (arrOfNumbers, toRemove) => {
         throw new TypeError('second parameter must be a number');
     }
 
-    // write the logic!
+    //write the logic!
 
     return arrOfNumbers.filter(num => num !== toRemove);
 };
@@ -91,8 +91,15 @@ const removeNumberHandler = () => {
         return;
     }
 
-    numbers = removeNumber(numbers, userNumber);
-    console.log('numbers (after):', typeof numbers, '\n', numbers);
 
-    displayArrayHandler(numbers, `successfully removed ${userNumber}`);
+
+    if (numbers.indexOf(userNumber) < 0) {
+        displayArrayHandler(numbers, `${userNumber} does not exist among saved numbers`)
+    } else {
+        numbers = removeNumber(numbers, userNumber);
+        console.log('numbers (after):', typeof numbers, '\n', numbers);
+        displayArrayHandler(numbers, `successfully removed ${userNumber}`);
+    }
+
+
 };
