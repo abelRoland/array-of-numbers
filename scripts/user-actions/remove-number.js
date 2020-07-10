@@ -21,6 +21,9 @@ const removeNumber = (arrOfNumbers, toRemove) => {
     }
 
     // write the logic!
+    if (arrOfNumbers.indexOf(toRemove) < 0) {
+        throw new TypeError('This number does not exist among saved numbers')
+    }
 
     return arrOfNumbers.filter(num => num !== toRemove);
 };
