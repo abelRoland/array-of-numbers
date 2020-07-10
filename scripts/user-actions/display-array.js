@@ -11,7 +11,7 @@ console.log('--- loading: display array');
 
 const reduceForAlert = (arrOfNumbers) => {
 
-  const display = document.getElementById("display");
+  //const display = document.getElementById("display");
 
   if (!Array.isArray(arrOfNumbers)) {
     throw new TypeError('parameter must be an array');
@@ -25,7 +25,7 @@ const reduceForAlert = (arrOfNumbers) => {
      value = value +  numbers[i] + '\n';
   }
     
-   display.innerHTML = value;
+  // display.innerHTML = value;
    alert(value);
  };
 
