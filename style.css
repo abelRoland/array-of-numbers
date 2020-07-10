@@ -1,3 +1,60 @@
 .poo {
   color:brown;
 }
+
+body {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+.button {
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: large;
+  text-transform: uppercase;
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px ;
+}
+
+main {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.first {
+  background-image: linear-gradient(to right, violet, purple);
+  color: white;
+}
+.second {
+  background-image: linear-gradient(to right, purple, darkblue);
+  color: lightblue;
+}
+
+.third {
+  background-image: linear-gradient(to right, darkblue, green);
+  color: lightblue;
+}
+
+.forth {
+  background-image: linear-gradient(to right, green, yellow);
+  color: darkgreen;
+}
+
+.fifth {
+  background-image: linear-gradient(to right, yellow, orange);
+  color: darkred;
+}
+
+.sixth {
+  background-image: linear-gradient(to right, orange, red);
+  color: darkred;
+}
+
+.seventh {
+  background-image: linear-gradient(to right, red, darkred);
+  color: white;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, black, white);
+}
